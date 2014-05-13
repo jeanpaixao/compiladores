@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class AnalisadorLexico {
+	
 	private StringBuffer buffer;
 	private char carac;
 
@@ -21,7 +22,9 @@ public class AnalisadorLexico {
 		readCh(); // LE O PRIMEIRO CARACTERE PARA TRATAMENTO
 	}
 
-	// LÊ O CARACTERE E INCREMENTA O CONTADOR DE LINHA CASO SEJA UM \N
+
+
+	// Lï¿½ O CARACTERE E INCREMENTA O CONTADOR DE LINHA CASO SEJA UM \N
 	private void readCh() {
 		try {
 			this.carac = (char) codigoFonte.read();
@@ -34,7 +37,7 @@ public class AnalisadorLexico {
 		}
 	}
 
-	// LÊ O PROXIMO CARACTERE E COMPARA COM O PARAMETRO, CASO SEJA UM \N
+	// Lï¿½ O PROXIMO CARACTERE E COMPARA COM O PARAMETRO, CASO SEJA UM \N
 	// INCREMENTA CONTADOR DE LINHA
 	private boolean readCh(char c) {
 		try {
@@ -60,7 +63,7 @@ public class AnalisadorLexico {
 		buffer.delete(0, buffer.length());
 	}
 	
-	// LANCA A EXCESSAO COM AS INFORMAÇÕES CONTIDAS NAS VARIAVEIS PRIVADAS
+	// LANCA A EXCESSAO COM AS INFORMAï¿½ï¿½ES CONTIDAS NAS VARIAVEIS PRIVADAS
 	private void lancarExcessao() throws ErroLexico {
 		buffer.append(carac);
 		String valor = buffer.toString();
@@ -298,7 +301,7 @@ public class AnalisadorLexico {
 			if (mapa.isPalavraReservada(buffer.toString())) {
 				// CASO SEJA UMA PALAVRA RESERVADA, CERTIFIQUE-SE DE
 				// ZERAR O BUFFER, CASO SEJA LIDO OS CARACTERES DO SWITCH
-				// NÃO REALIZE LEITURA, PARA OS DEMAIS LEIA O PROXIMO.
+				// Nï¿½O REALIZE LEITURA, PARA OS DEMAIS LEIA O PROXIMO.
 				String valor = buffer.toString();
 				zerarBuffer();
 				switch (carac) {
