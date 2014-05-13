@@ -9,7 +9,9 @@ public class ErroLexico extends Exception{
 
 	public ErroLexico(String valor, int linha){
 		super("ERRO LEXICO, VALOR: \""+valor+"\" NA LINHA "+linha+
-				" NÃO FOI RECONHECIDO");
+				" Nï¿½O FOI RECONHECIDO");
 	}
+		
+		
 		
 }
