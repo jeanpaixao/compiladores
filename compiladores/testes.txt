@@ -1,0 +1,34 @@
+v1 v2
+
+'a'
+
+#include <stdio.h>
+
+"a+b+1"
+/ /*  aaaa*/
+
+return _ste ( ) { } void : ; , /
+'\r' + - * main if '\n' '\t' !=
+== >= <= > ! =
+/*comentario*/104 else <
+m_op = 5 "nome '\n' '\t' '\r'";
+else || &&;
+bop <= 77 '\r' "\r\n" #include
+
+#include <stdio.h>
+
+int fatorial(int n) {
+int fat, n;
+for(fat = 1; n > 1; n = n - 1)
+fat = fat * n;
+return fat;
+}
+
+int main() {
+int fatorialResult = fatorial(5);
+printint(fatorialResult);
+return 0;
+}
+
+'	' "aaaaaaaa" "\n\t" a return true   123123 14.5 12341234.22 /* */ + - * / && ! != || < <= > >= == = 
+/* comentario */
