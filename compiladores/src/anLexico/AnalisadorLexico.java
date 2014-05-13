@@ -24,7 +24,7 @@ public class AnalisadorLexico {
 
 
 
-	// L� O CARACTERE E INCREMENTA O CONTADOR DE LINHA CASO SEJA UM \N
+	// O CARACTERE E INCREMENTA O CONTADOR DE LINHA CASO SEJA UM \N
 	private void readCh() {
 		try {
 			this.carac = (char) codigoFonte.read();
